@@ -1,0 +1,232 @@
+/* ------------------------------------------------------------ */
+
+body {
+    background: #fafafa;
+    font-size: 10pt;
+    font-family: "Fira Sans";
+    height: 100%;
+}
+
+span {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ------------------------------------------------------------ */
+
+.topo {
+    background: #eef0f1;
+    height: 50px;
+    box-shadow: 0 3px 0px #cecece;
+    position: fixed;
+    top: -53px;
+    transition: top 0.5s ease;
+    -webkit-transition: top 0.5s ease;
+}
+
+.topo.transicao {
+    top: 0px;
+}
+
+.azul {
+    color: #00529c;
+    font-style: italic;
+}
+
+.amarela {
+    color: #fcdd03;
+    font-style: italic;
+}
+
+.verde {
+    color: #00b300;
+    font-style: italic;
+}
+
+
+/* ------------------------------------------------------------ */
+
+.container {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 0;
+}
+
+#content {
+    padding-top: 50px;
+    box-sizing: border-box;
+}
+
+#caixa {
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    top: 50px;
+    bottom: 0;
+    width: 99%;
+    height: 100%;
+}
+
+#busca {
+    width: 500px;
+    margin: auto;
+    display: block;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    -webkit-transition: opacity 0.5s ease;
+    transition: display 0.5s ease 1s;
+    -webkit-transition: display 0.5s ease 1s;
+}
+
+#busca.transicao {
+    opacity: 0;
+    display: none;
+}
+
+#busca h1 {
+    font-size: 10em;
+    font-family: 'Lobster', cursive;
+}
+
+.has-feedback label.sr-only~.form-control-feedback {
+    top: 9px;
+}
+
+#lista {
+    width: 90%;
+    margin: auto;
+    opacity: 0;
+    background-color: #fff;
+    display: none;
+    height: 100%;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    padding: 30px 20px 150px 20px;
+}
+
+#lista.transicao {
+    display: block;
+    opacity: 1;
+}
+
+#lista ul {
+    padding: 0;
+    list-style-type: none;
+    width: 50%;
+}
+
+#lista .page-header {
+    font-size: 18px !important;
+}
+
+#lista h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+#lista cite {
+    font-size: 14px;
+}
+
+#lista p {
+    font-size: small;
+    line-height: 1.4;
+    word-wrap: break-word;
+}
+
+.carregando {
+    position: absolute;
+    z-index: 1040;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.carregando .panel {
+    width: 40%;
+    margin: 100px auto 0 auto;
+    font-size: 18px;
+    text-align: center;
+    box-shadow: 0 3px 4px 1px rgba(0, 0, 0, 0.5);
+}
+
+.load-animate {
+    -animation: spin .7s infinite linear;
+    -webkit-animation: spin2 .7s infinite linear;
+}
+
+@-webkit-keyframes spin2 {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: scale(1) rotate(0deg);
+    }
+    to {
+        transform: scale(1) rotate(360deg);
+    }
+}
+
+
+/* ------------------------------------------------------------ */
+
+.navbar {
+    margin-bottom: 0;
+    border: 0;
+}
+
+.navbar-default {
+    border-color: #fafafa;
+    padding: 8px;
+}
+
+.marca {
+    font-family: 'Lobster', cursive;
+    font-weight: bold;
+    font-size: 30px;
+    color: #fff;
+}
+
+.marca:hover {
+    text-decoration: none;
+}
+
+
+/* ------------------------------------------------------------ */
+
+.obrigatorio {
+    color: #ff0000;
+}
+
+.ponteiro {
+    cursor: pointer;
+}
+
+.pagerBab.pagination>li>a,
+.pagerBab.pagination>li>span {
+    border: 0;
+    font-size: 15px;
+    color: #A9A9A9;
+}
+
+.pagerBab.pagination>li>a .babLetra {
+    font-size: 30px;
+    font-family: 'Lobster', cursive;
+    font-weight: bold;
+}
+
+.pagerBab.pagination>.active>a,
+.pagerBab.pagination>.active>a:hover,
+.pagerBab.pagination>.active>a:focus {
+    color: #ffffff;
+    background-color: #C0C0C0;
+}

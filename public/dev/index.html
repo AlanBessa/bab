@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html ng-app="bab" ng-strict-di>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Back Office" />
+    <meta name="author" content="Druid" />
+    <title>BaB Search Tool</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <!-- Bootstrap 3.3.6 -->
+    <link rel="stylesheet" type="text/css" href="../../bower_components/bootstrap/dist/css/bootstrap.css" />
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" type="text/css" href="../../bower_components/font-awesome/css/font-awesome.css" />
+    <!-- Toastr -->
+    <link rel="stylesheet" type="text/css" href="../../bower_components/toastr/toastr.css" />
+    <!-- Loading bar -->
+    <link rel="stylesheet" type='text/css' href="../../bower_components/angular-loading-bar/build/loading-bar.css" media='all' />
+
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Lobster" rel="stylesheet">
+
+    <!-- Custom style -->
+    <link rel='stylesheet' type="text/css" href='css/fontes.css' />
+    <link rel='stylesheet' type="text/css" href='css/estilo.css' />
+</head>
+
+<body class="ng-cloak" ngCloak>
+
+    <!-- CONTAINER -->
+    <div class="container">
+        <!-- AREA DO CONTEÚDO -->
+        <div id="content" class="" ng-view></div>
+        <!-- /content -->
+    </div>
+    <!-- /container -->
+
+    <div ng-include="'pages/shared/carregando.html'"></div>
+
+    <!-- Pacotes -->
+    <script type="text/javascript" src="js/html5shiv.min.js"></script>
+    <script type="text/javascript" src="js/respond.min.js"></script>
+    <script type="text/javascript" src="../../bower_components/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="../../bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script type="text/javascript" src="../../bower_components/toastr/toastr.js"></script>
+    <script type="text/javascript" src="../../bower_components/moment/min/moment.min.js"></script>
+
+    <script type="text/javascript" src="../../bower_components/angular/angular.js"></script>
+    <script type="text/javascript" src="../../bower_components/angular-route/angular-route.js"></script>
+    <script type="text/javascript" src="../../bower_components/angular-touch/angular-touch.js"></script>
+    <script type="text/javascript" src="../../bower_components/angular-i18n/angular-locale_pt-br.js"></script>
+    <script type="text/javascript" src="../../bower_components/angular-resource/angular-resource.js"></script>
+
+    <script type="text/javascript" src="../../bower_components/angular-animate/angular-animate.js"></script>
+    <script type="text/javascript" src="../../bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+
+    <script type="text/javascript" src="../../bower_components/ngstorage/ngStorage.js"></script>
+    <script type="text/javascript" src="../../bower_components/angular-loading-bar/build/loading-bar.js"></script>
+
+    <script type="text/javascript" src="../../bower_components/angular-sanitize/angular-sanitize.js"></script>
+
+    <script type="text/javascript" src="../../bower_components/angular-moment/angular-moment.js"></script>
+    <script type="text/javascript" src="../../bower_components/angular-messages/angular-messages.js"></script>
+
+    <!-- Configuração -->
+    <script type="text/javascript" src="../../app/app.js"></script>
+    <script type="text/javascript" src="../../app/routes.js"></script>
+    <script type="text/javascript" src="../../app/config.js"></script>
+
+    <!-- Diretivas -->
+
+    <!-- Filtros -->
+    <script type="text/javascript" src="../../app/filters/telefone.filter.js"></script>
+    <script type="text/javascript" src="../../app/filters/cep.filter.js"></script>
+    <script type="text/javascript" src="../../app/filters/cpf.filter.js"></script>
+    <script type="text/javascript" src="../../app/filters/cnpj.filter.js"></script>
+
+    <!-- Decorações -->
+    <script type="text/javascript" src="../../app/decorator/exception.config.decorator.js"></script>
+
+    <!-- Fábricas -->
+    <script type="text/javascript" src="../../app/factories/home.factory.js"></script>
+    <script type="text/javascript" src="../../app/factories/paginacao.factory.js"></script>
+
+    <!-- Serviços -->
+
+    <!-- Controles -->
+    <script type="text/javascript" src="../../app/controllers/home/home.controller.js"></script>
+</body>
+
+</html>
