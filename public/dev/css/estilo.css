@@ -114,7 +114,6 @@ span {
 #lista ul {
     padding: 0;
     list-style-type: none;
-    width: 50%;
 }
 
 #lista .page-header {
@@ -229,4 +228,14 @@ span {
 .pagerBab.pagination>.active>a:focus {
     color: #ffffff;
     background-color: #C0C0C0;
+}
+
+@media (max-width: 1336px) {
+    .pagerBab.pagination>li>a,
+    .pagerBab.pagination>li>span {
+        font-size: 12px;
+    }
+    .pagerBab.pagination>li>a .babLetra {
+        font-size: 20px;
+    }
 }
